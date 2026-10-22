@@ -1,0 +1,8 @@
+# Tested with Python 3.12
+numpy==2.4.4
+scipy==1.17.1
+pandas==3.0.2
+matplotlib==3.10.8
+# Phase 8 real-image check only (optional)
+opencv-python>=4.13
+pillow>=10

@@ -1,0 +1,52 @@
+[
+  {
+    "check": "projection_on_axis",
+    "passed": true,
+    "detail": "in_fov=True, behind_in_fov=False, px/m=166.3 (expected 166.3)"
+  },
+  {
+    "check": "fisheye_fov_boundary",
+    "passed": true,
+    "detail": "in_fov at ~90/94/96/120 deg = [np.True_, np.True_, np.True_, np.False_] (95 deg half-FOV; small tilt shifts boundary)"
+  },
+  {
+    "check": "identification_distance_analytic",
+    "passed": true,
+    "detail": "front_narrow identification range = 6.65 m; fisheye = 2.32 m (f/250)"
+  },
+  {
+    "check": "ray_occlusion_known_answer",
+    "passed": true,
+    "detail": "through=True, beside=False"
+  },
+  {
+    "check": "single_pedestrian_onset",
+    "passed": true,
+    "detail": "GT identifiable from 6.51 m (analytic 6.65 m, step 0.5 s at ~0.37 m/step)"
+  },
+  {
+    "check": "full_occlusion_zero",
+    "passed": true,
+    "detail": "identifiable steps = 0"
+  },
+  {
+    "check": "perfect_detector_no_leak",
+    "passed": true,
+    "detail": "AIE P=0.0, B2=0.0, A1=0.0, B1(raw)=252.5"
+  },
+  {
+    "check": "blind_detector_equals_raw",
+    "passed": true,
+    "detail": "A1=252.5, P=252.5, B1=252.5"
+  },
+  {
+    "check": "seed_determinism",
+    "passed": true,
+    "detail": "same-seed identical=True, other-seed differs=True"
+  },
+  {
+    "check": "gt_independent_of_perception",
+    "passed": true,
+    "detail": "face_gt and plate_gt identical under a different perception model (same seed)"
+  }
+]

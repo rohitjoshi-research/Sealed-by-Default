@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "If you use this software or data, please cite it as below."
+title: "Sealed by Default: simulator and data for privacy-preserving parked-vehicle camera recording"
+version: "0.1.0"
+date-released: "2026-10-05"
+doi: "10.5281/zenodo.23575914"
+license: MIT
+type: software
+authors:
+  - family-names: "Joshi"
+    given-names: "Rohit"
+    orcid: "https://orcid.org/0009-0007-4201-7862"
+    affiliation: "European Institute of Management and Technology (EIMT), 6330 Cham, Canton of Zug, Switzerland"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.23575914"
+    description: "Zenodo archive of this release"
+keywords:
+  - automotive cameras
+  - bystander privacy
+  - pseudonymisation
+  - sentry mode
+  - simulation
+abstract: >-
+  CPU-only geometric simulator, benchmarks and analysis for a sealed-by-default architecture for parked-vehicle
+  cameras with fail-closed sealing, per-person keys and owner-or-court unsealing. All results are simulated.

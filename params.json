@@ -1,0 +1,108 @@
+{
+  "Params": {
+    "dt": 0.5,
+    "duration": 600.0,
+    "ped_rate_per_min": 6.0,
+    "veh_rate_per_min": 2.0,
+    "incident": true,
+    "condition": "day_clear",
+    "camera_set": "5cam",
+    "layout": "opposite_row",
+    "face_id_pxm": 250.0,
+    "plate_id_pxm": 200.0,
+    "face_max_angle_deg": 70.0,
+    "plate_max_angle_deg": 60.0,
+    "min_visible_frac": 0.5,
+    "trigger_dist_m": 1.0,
+    "trigger_hold_s": 1.0,
+    "pre_s": 10.0,
+    "post_s": 20.0,
+    "face_det_c50_pxm": 110.0,
+    "face_det_scale": 25.0,
+    "plate_det_c50_pxm": 90.0,
+    "plate_det_scale": 25.0,
+    "person_det_c50_pxm": 20.0,
+    "person_det_scale": 8.0,
+    "vehicle_det_c50_pxm": 10.0,
+    "vehicle_det_scale": 5.0,
+    "track_sigma": 0.6,
+    "frame_sigma": 0.4,
+    "occl_penalty": 1.5,
+    "yaw_free_deg": 40.0,
+    "yaw_penalty_per_30deg": 2.0,
+    "evidence_min_s": 1.0,
+    "seed": 0
+  },
+  "TIME_Q": {
+    "day": 1.0,
+    "dusk": 0.8,
+    "night": 0.5
+  },
+  "WEATHER_Q": {
+    "clear": 1.0,
+    "rain": 0.8,
+    "fog": 0.6
+  },
+  "TIME_SHIFT": {
+    "day": 0.0,
+    "dusk": -0.3,
+    "night": -0.8
+  },
+  "WEATHER_SHIFT": {
+    "clear": 0.0,
+    "rain": -0.3,
+    "fog": -0.6
+  },
+  "FOG_VISIBILITY_M": 100.0,
+  "FOG_SHIFT_K": 3.0,
+  "DESIGNS": {
+    "B0_continuous_raw": [
+      "continuous",
+      "raw",
+      false,
+      false
+    ],
+    "B1_event_raw": [
+      "event",
+      "raw",
+      false,
+      false
+    ],
+    "B2_event_blur": [
+      "event",
+      "irreversible",
+      false,
+      false
+    ],
+    "B2fc_event_blur_fc": [
+      "event",
+      "irreversible",
+      true,
+      false
+    ],
+    "P_proposed": [
+      "event",
+      "sealed",
+      true,
+      true
+    ],
+    "A1_no_failclosed": [
+      "event",
+      "sealed",
+      false,
+      true
+    ],
+    "A2_continuous_sealed": [
+      "continuous",
+      "sealed",
+      true,
+      true
+    ],
+    "A3_single_key": [
+      "event",
+      "sealed",
+      true,
+      false
+    ]
+  }
+}
